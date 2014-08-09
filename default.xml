@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="6dbbb15997d2cf032b098a33f65387fcd36d478a">
+  <project groups="pdk" name="platform/build" path="build" revision="68715d0104b202d2cbdd281ded861c5c35fca700">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="a0f99286d0909f7a30b0bee742bec2a0b62c4dd0"/>
-  <project name="platform/art" path="art" revision="e74fcc4ba2dc57fb663a81ced62ec950b87f2832"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="1c5e415f8c4cd2cb10ad1d1cf660d17161132772"/>
+  <project name="platform/art" path="art" revision="5607c8e770b07e1a332a53b2f0c07f2caa4f9177"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="a0db46418757dd1b399acb97ff42083cc274e8ae"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="ca40959a8caafa0df6a5c3d845e2afe6b252093f"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="974fe112ae6df95ca6d49688d6e3e459d87e16de"/>
@@ -222,7 +222,7 @@
   <project name="platform/external/ppp" path="external/ppp" revision="8b58d9bd02e2c55f547fafbe9ba55b1160665761"/>
   <project groups="pdk-java" name="platform/external/proguard" path="external/proguard" revision="3fd19dba2bdc0c4b64afda4d75836e1dcf7abf97"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" revision="a76831c3629c3c1a9900984f3aea6306dbf0734c"/>
-  <project name="platform/external/qemu" path="external/qemu" revision="539e1f25ecbfe80814dba2ea77feb22087b9d53b"/>
+  <project name="platform/external/qemu" path="external/qemu" revision="8312e9fb79aced5a1661ecc081708489b444da86"/>
   <project name="platform/external/qemu-pc-bios" path="external/qemu-pc-bios" revision="20349dae98d7de09a7e390d4a706c64f1db6edc2"/>
   <project name="platform/external/regex-re2" path="external/regex-re2" revision="0d4c52358a1af421705c54bd8a9fdd8a30558a2e"/>
   <project name="platform/external/replicaisland" path="external/replicaisland" revision="99e2e54c5d036048caf09bb05eea0969de093104"/>
@@ -273,7 +273,7 @@
   <project name="platform/frameworks/mff" path="frameworks/mff" revision="b9669b8540a1e5c953374d53b115514335e23c27"/>
   <project name="platform/frameworks/ml" path="frameworks/ml" revision="b020ad88ca28ada76a596b5dcc7e6c2854fcc132"/>
   <project name="platform/frameworks/multidex" path="frameworks/multidex" revision="590a07e63868f0a1da311ff22b4a9f35eb48a865"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="735082ea156d91cf72c241e9134abc22038c8f13"/>
+  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="f491f497b2a4ba5a0ec60b291cce4ffb3be3d33c"/>
   <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="03b18577f8f8f799e87a62b8e03889ddacf6daa2"/>
   <project name="platform/frameworks/opt/carddav" path="frameworks/opt/carddav" revision="f08aa2df132dd8dc32a0013d3750137d9dd9280a"/>
   <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="720a40ae24d526268b3c0f2dd8497b5df2cc6f23"/>
@@ -315,7 +315,7 @@
   <project groups="exynos5" name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="d7bd354358ecfb1e52afb3da4fc586c0822c696a"/>
   <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="949aad363a9cc794f9ac8fd42338ae1678e50bc1"/>
   <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="c32caab84ff9edc1489ed6c8079c7d252caafc4d"/>
-  <project name="platform/libcore" path="libcore" revision="7033b1a77271044b40c1c598c55b4135fc1a146b"/>
+  <project name="platform/libcore" path="libcore" revision="cf5219256c9a44e9b215ac645c1823238ebd31d7"/>
   <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper" revision="b37e11d07dec2d49b576709ae8e0568a9daabd07"/>
   <project name="platform/ndk" path="ndk" revision="be9ba71abf2b898fa62a169659ab0b6f8baaa5ca"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="80327793c4b4ebf4a6a53b72e46c477afe18f135"/>
@@ -422,7 +422,7 @@
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="a3f0180676c6b6cd9c664704f86855d3404ae4dd"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" revision="d9735fc81434f2af2c44d86ca57740c673c8d9bc"/>
-  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="7a845bc1b24d53a9071a66294c77bdbd925a3b3f"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="9e42984d7ecb5654a63d76339bfb9d99e57ba9c8"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="2725a175a32032fb9a63e247c176ecc3d448ea27"/>
   <project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="eabc7ae8ed527ee3d4517196732fa3f3e8939a28"/>
   <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" revision="c06b9b305c365163c99d4ffba49ac37ce2716024"/>
@@ -442,7 +442,7 @@
   <project name="platform/sdk" path="sdk" revision="1af9ef83f5f6c6fd9202d5bdd8d4248a4eb855aa"/>
   <project groups="pdk" name="platform/system/core" path="system/core" revision="56b28f6b2c4722c75dbc7f041f36552221e51133"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="97ed949ec7bef088ca3d06fb7b5f3bdad9a5103c"/>
-  <project name="platform/system/keymaster" path="system/keymaster" revision="b10f3b26af1e3b382d9ef361b3eb5279d16a9c05"/>
+  <project name="platform/system/keymaster" path="system/keymaster" revision="301646f55214ed693e79c7869d54033a74641907"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="77f0f32b32adc5ba1134e7a68e4d907c4f695eb6"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="f5d949ef0991737af9daa7ba702cc2ec638e435b"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="cf5a7fc9fbaa8a084fb874ad2d6780c6914cd278"/>
