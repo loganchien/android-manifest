@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="3c6e4910a6646e36425e5c6ea4b7cc4bee47b6ca">
+  <project groups="pdk" name="platform/build" path="build" revision="ce9b58b1e432f834e00e84592576f69923781dad">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="a0f99286d0909f7a30b0bee742bec2a0b62c4dd0"/>
-  <project name="platform/art" path="art" revision="9dcf75c80187504ec88e7ef91d64a6a68279eb9d"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="7d05f741e7885ad42f853b5fe2b1d31cdc756b5c"/>
+  <project name="platform/art" path="art" revision="aa1ed01d119ee6d93e6254789c79246e91fcec32"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="2b6cdb5e459661727c99e81660c7c3df5cdbe024"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="ca40959a8caafa0df6a5c3d845e2afe6b252093f"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="974fe112ae6df95ca6d49688d6e3e459d87e16de"/>
@@ -96,7 +96,7 @@
   <project name="platform/external/chromium_org/tools/grit" path="external/chromium_org/tools/grit" revision="093cf9262b695285cdfafaddbad276bc0daf77f1"/>
   <project name="platform/external/chromium_org/tools/gyp" path="external/chromium_org/tools/gyp" revision="b1e05afbf9d31ac43e23478ba5709fd9165cb845"/>
   <project name="platform/external/chromium_org/v8" path="external/chromium_org/v8" revision="f5a4f475b771ff4afb058f289a7ad73711d732a7"/>
-  <project groups="pdk" name="platform/external/clang" path="external/clang" revision="070ed154a0a8bc2c0fd4fb9b8a86a0f1218e6dfa"/>
+  <project groups="pdk" name="platform/external/clang" path="external/clang" revision="123b2924ba712a33160a578e22fc3ab4318d9492"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="c185902e393cd71823258016ead1b315ed062b24"/>
   <project name="platform/external/conscrypt" path="external/conscrypt" revision="0931d51c58b2dc2f612298f99fbf0fa6ed4c3706"/>
   <project name="platform/external/dexmaker" path="external/dexmaker" revision="2b528c4b156f2de5c641875b98e59e0b09ebaccd"/>
@@ -182,7 +182,7 @@
   <project name="platform/external/libxml2" path="external/libxml2" revision="399e808f940777d18efe377bd34f738dc84729e0"/>
   <project name="platform/external/libxslt" path="external/libxslt" revision="98f5140c33273d3bd67ca03566f8417406001016"/>
   <project groups="libyuv" name="platform/external/libyuv" path="external/libyuv" revision="482a582884351288fb701532359652970b1ba7c0"/>
-  <project name="platform/external/linux-tools-perf" path="external/linux-tools-perf" revision="75ab760e98e37aa3c893d8782ec694e2715460ea"/>
+  <project name="platform/external/linux-tools-perf" path="external/linux-tools-perf" revision="879f55caa34e81fa1134bf201d54856e90997388"/>
   <project name="platform/external/littlemock" path="external/littlemock" revision="328b01eada8965cd38feea884d4080c31e3763b0"/>
   <project groups="pdk" name="platform/external/llvm" path="external/llvm" revision="080fb91868d9464ed7ed94b336dae6683b434098"/>
   <project name="platform/external/ltrace" path="external/ltrace" revision="82ae18484c7b6a8af05354caf6de3a7f1ac5fcf9"/>
@@ -227,7 +227,7 @@
   <project name="platform/external/robolectric" path="external/robolectric" revision="6bf395c984ed3f69711663b006aeffbb0f7e8a90"/>
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="dde037b82e5cd6215244e3240dbaad417928eafa"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="a20409bc6f33be0b6683a7b6e4a28cce3e05f29a"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="302f59aaf026365b7560c317a14ff04152d69935"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="6723e5241a45c6de224c96384a595a1bf5bc5449"/>
   <project name="platform/external/sil-fonts" path="external/sil-fonts" revision="795a2f4339f8a82d6cff187e2a77bb01d5911aac"/>
   <project name="platform/external/skia" path="external/skia" revision="d6f2c76fdb9b0469261fa2db0b29ed48c7ac38b5"/>
@@ -437,8 +437,8 @@
   <project name="platform/prebuilts/runtime" path="prebuilts/runtime" revision="56e663b8ec9cd0df9ce5afdc7b7d56460faf44c8"/>
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="52043ca65e06bc84779dd8d3e55e72ad04bcef59"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="130c3d0a1a484d617531d75ddd50714f68213cbb"/>
-  <project name="platform/sdk" path="sdk" revision="5131332bbb775729c337a4b6fc2ce87099b9177e"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="25a7d5f892f2606ed28eff761c59693398497343"/>
+  <project name="platform/sdk" path="sdk" revision="39f4d6778f7597af9d416db62a677cce153cf84b"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="39ab11d0d46b9be1bb41241ff58e3f6f3259dd74"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="97ed949ec7bef088ca3d06fb7b5f3bdad9a5103c"/>
   <project name="platform/system/keymaster" path="system/keymaster" revision="1615f2ecf2537db7b302eb9b5be4394f711fd815"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="77f0f32b32adc5ba1134e7a68e4d907c4f695eb6"/>
