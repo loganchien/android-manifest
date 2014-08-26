@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="d0015f7173d4bc2962d3c89b945e9c3bce5cb313">
+  <project groups="pdk" name="platform/build" path="build" revision="18f23def0e2cda7934c2aef71e2defc729726913">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="a0f99286d0909f7a30b0bee742bec2a0b62c4dd0"/>
-  <project name="platform/art" path="art" revision="072a8bf6883b6f6f178200ff9f03aa8d56a83c40"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="a4a8c4feb8cf3cebf8aceace70e699e128095b5c"/>
+  <project name="platform/art" path="art" revision="0038fcaa6f2457f5de5544fc93cd57a305e466de"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="c764fb24ccb47e05d8e140cde5b4111225790ef1"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="ca40959a8caafa0df6a5c3d845e2afe6b252093f"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="974fe112ae6df95ca6d49688d6e3e459d87e16de"/>
@@ -18,7 +18,7 @@
   <project name="platform/developers/demos" path="developers/demos" revision="64526120cd8da89bcb9a48acf95307d2c172a6e8"/>
   <project name="platform/developers/docs" path="developers/docs" revision="c0b835ddd9acc27176dc9a0f7d1aa2faf5d51806"/>
   <project name="platform/developers/samples/android" path="developers/samples/android" revision="dea82fa23f038d66bd9cfdff2afb8ef22add1c4f"/>
-  <project name="platform/development" path="development" revision="6d884d6cb304e14e380ba501abe868cfaea97426"/>
+  <project name="platform/development" path="development" revision="4123e0886b69fd7ecb91abe1c4ac9bfca1de52e7"/>
   <project groups="device,flo" name="device/asus/deb" path="device/asus/deb" revision="0ce3a783d549d023ddc553a04fed717ffb2ff533"/>
   <project groups="device,flo" name="device/asus/flo" path="device/asus/flo" revision="55ea79b11f9f82b2aa03f44a3429112fc5c06d07"/>
   <project groups="device,flo" name="device/asus/flo-kernel" path="device/asus/flo-kernel" revision="6d74123947016999ae62d9c3067ae97782fdba21"/>
@@ -44,7 +44,7 @@
   <project groups="device,manta" name="device/samsung/manta" path="device/samsung/manta" revision="10149f87f34ba720be946e0b1a696ce135e1f58f"/>
   <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="e2caa98f86abc325a11ecff6980d703ffd673ab1"/>
   <project groups="pdk" name="platform/external/aac" path="external/aac" revision="2decc77814e729df47464a504123f9b398ac7077"/>
-  <project name="platform/external/android-clat" path="external/android-clat" revision="18921713780edb45ceef327d5fcf3387818300f3"/>
+  <project name="platform/external/android-clat" path="external/android-clat" revision="05ff508a793c2113ca2a06942f0cec1aec220799"/>
   <project name="platform/external/android-mock" path="external/android-mock" revision="4fe497660c2e939300dc5b743d662aef458b1726"/>
   <project name="platform/external/ant-glob" path="external/ant-glob" revision="0f189400fd2a36bf11bfb058e7f3917eb7ed163a"/>
   <project name="platform/external/antlr" path="external/antlr" revision="47997265eeb7d954a32ece693bbe6dab740872dd"/>
@@ -98,7 +98,7 @@
   <project name="platform/external/chromium_org/v8" path="external/chromium_org/v8" revision="91d592d6a6d6f013a7c419e2cdaa652f44c47408"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang" revision="123b2924ba712a33160a578e22fc3ab4318d9492"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="c185902e393cd71823258016ead1b315ed062b24"/>
-  <project name="platform/external/conscrypt" path="external/conscrypt" revision="cc2ef2e2e9ee64f2e0ac2abc7fdf636e2f81fa5e"/>
+  <project name="platform/external/conscrypt" path="external/conscrypt" revision="f67d784abe5cef700240be02c68cecd899cd8e6d"/>
   <project name="platform/external/dexmaker" path="external/dexmaker" revision="2b528c4b156f2de5c641875b98e59e0b09ebaccd"/>
   <project name="platform/external/dhcpcd" path="external/dhcpcd" revision="03baf5eab896198b5060d287af3fd60d360bf48f"/>
   <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="7674911bc9d10adf57c2c2d15d0c641b48e4afe6"/>
@@ -220,7 +220,7 @@
   <project name="platform/external/ppp" path="external/ppp" revision="8b58d9bd02e2c55f547fafbe9ba55b1160665761"/>
   <project groups="pdk-java" name="platform/external/proguard" path="external/proguard" revision="3fd19dba2bdc0c4b64afda4d75836e1dcf7abf97"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" revision="a76831c3629c3c1a9900984f3aea6306dbf0734c"/>
-  <project name="platform/external/qemu" path="external/qemu" revision="dbc82ba2516130cd7d9b069affed3035813fd925"/>
+  <project name="platform/external/qemu" path="external/qemu" revision="6a7d588cc50c6a96ab27e8c8a0e8e2e9b23ac7bf"/>
   <project name="platform/external/qemu-pc-bios" path="external/qemu-pc-bios" revision="20349dae98d7de09a7e390d4a706c64f1db6edc2"/>
   <project name="platform/external/regex-re2" path="external/regex-re2" revision="0d4c52358a1af421705c54bd8a9fdd8a30558a2e"/>
   <project name="platform/external/replicaisland" path="external/replicaisland" revision="99e2e54c5d036048caf09bb05eea0969de093104"/>
@@ -271,7 +271,7 @@
   <project name="platform/frameworks/mff" path="frameworks/mff" revision="b9669b8540a1e5c953374d53b115514335e23c27"/>
   <project name="platform/frameworks/ml" path="frameworks/ml" revision="b020ad88ca28ada76a596b5dcc7e6c2854fcc132"/>
   <project name="platform/frameworks/multidex" path="frameworks/multidex" revision="590a07e63868f0a1da311ff22b4a9f35eb48a865"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="72deed8cd25349ed12390a7a5088d07d63f3d8cd"/>
+  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="c70626a1ef18ef316a633ba0e399dbdf8f85973a"/>
   <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="03b18577f8f8f799e87a62b8e03889ddacf6daa2"/>
   <project name="platform/frameworks/opt/carddav" path="frameworks/opt/carddav" revision="f08aa2df132dd8dc32a0013d3750137d9dd9280a"/>
   <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="720a40ae24d526268b3c0f2dd8497b5df2cc6f23"/>
@@ -314,7 +314,7 @@
   <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="949aad363a9cc794f9ac8fd42338ae1678e50bc1"/>
   <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="c32caab84ff9edc1489ed6c8079c7d252caafc4d"/>
   <project name="platform/libcore" path="libcore" revision="73157cacca0948d867a38c4fb91c9b4193bc3ee6"/>
-  <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper" revision="b14825c7c75420049e03849994265be651cc4a4e"/>
+  <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper" revision="e2564566790ab2689c102dc46eea89f06caa0b86"/>
   <project name="platform/ndk" path="ndk" revision="be9ba71abf2b898fa62a169659ab0b6f8baaa5ca"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="80327793c4b4ebf4a6a53b72e46c477afe18f135"/>
   <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="7efa9db2129c99475684a2e44c4fb89cce3134bc"/>
@@ -438,9 +438,9 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="52043ca65e06bc84779dd8d3e55e72ad04bcef59"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="130c3d0a1a484d617531d75ddd50714f68213cbb"/>
   <project name="platform/sdk" path="sdk" revision="956b01fd91a6a576e8c8e35b2d608408e866c5da"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="5a1d5a8c79d0148291700cc5773a1519f2c6d8eb"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="31e29dbe1e7e8236bc03764f3da0303b207268c6"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="a64e3c55546f4d94c55f35e341a886c1dfab9e47"/>
-  <project name="platform/system/keymaster" path="system/keymaster" revision="5acebf56729f1307c4971a601ab38f6a320d0562"/>
+  <project name="platform/system/keymaster" path="system/keymaster" revision="407d41282d6b0a7f2d6e2826d44a58b016a5d844"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="77f0f32b32adc5ba1134e7a68e4d907c4f695eb6"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="f5d949ef0991737af9daa7ba702cc2ec638e435b"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="05e449a0e419967ef623804de8d1ae5b3be0e9ce"/>
