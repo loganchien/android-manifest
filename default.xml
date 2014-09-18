@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="88cfa0324724c7e90bfed3aaa61c27ca0926860b">
+  <project groups="pdk" name="platform/build" path="build" revision="ef3148c1fa2173a6ed5c4f7a02955acddf88d6ac">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="347409fdbdf8b9d3638beb7dbdb8c51b843bd899"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="36a5aa057cf1738577754a3fc16a14a5f817109f"/>
+  <project name="platform/art" path="art" revision="c64746c1d224143d85232c8899126930e3fe5d27"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="82e71085c23d11030e9950d8d08e30ef249fd73b"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="974fe112ae6df95ca6d49688d6e3e459d87e16de"/>
   <project groups="cts" name="platform/cts" path="cts" revision="991512bf4e033709d59cbd30447afeb1f417e226"/>
@@ -17,7 +17,7 @@
   <project name="platform/developers/demos" path="developers/demos" revision="64526120cd8da89bcb9a48acf95307d2c172a6e8"/>
   <project name="platform/developers/docs" path="developers/docs" revision="c0b835ddd9acc27176dc9a0f7d1aa2faf5d51806"/>
   <project name="platform/developers/samples/android" path="developers/samples/android" revision="dea82fa23f038d66bd9cfdff2afb8ef22add1c4f"/>
-  <project name="platform/development" path="development" revision="5b6647076bcc06ec43ea49ad7a472942226f35a3"/>
+  <project name="platform/development" path="development" revision="eef4aba8b8edd09768178f81f3293552cc52e64c"/>
   <project groups="device,flo" name="device/asus/deb" path="device/asus/deb" revision="0ce3a783d549d023ddc553a04fed717ffb2ff533"/>
   <project groups="device,flo" name="device/asus/flo" path="device/asus/flo" revision="55ea79b11f9f82b2aa03f44a3429112fc5c06d07"/>
   <project groups="device,flo" name="device/asus/flo-kernel" path="device/asus/flo-kernel" revision="6d74123947016999ae62d9c3067ae97782fdba21"/>
@@ -41,7 +41,7 @@
   <project groups="device,mako" name="device/lge/mako-kernel" path="device/lge/mako-kernel" revision="b7de901b8cb86036e9b92b3b6f188b45a524b125"/>
   <project groups="pdk" name="device/sample" path="device/sample" revision="096f9eb5763fd2766fcbbe4f6b9da51c87f61797"/>
   <project groups="device,manta" name="device/samsung/manta" path="device/samsung/manta" revision="10149f87f34ba720be946e0b1a696ce135e1f58f"/>
-  <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="434909b844e42d2625e8171e95c2c2fded53b70a"/>
+  <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="ba623b8f9bfb1a8ff158963b3ca583cb291c1e16"/>
   <project groups="pdk" name="platform/external/aac" path="external/aac" revision="4803bf75f564e5c9304527a5b902711f78e9f621"/>
   <project name="platform/external/android-clat" path="external/android-clat" revision="05ff508a793c2113ca2a06942f0cec1aec220799"/>
   <project name="platform/external/android-mock" path="external/android-mock" revision="4fe497660c2e939300dc5b743d662aef458b1726"/>
@@ -149,7 +149,7 @@
   <project name="platform/external/jsilver" path="external/jsilver" revision="739060b01245f1dc5f1800949b3c30c291253cff"/>
   <project name="platform/external/jsr305" path="external/jsr305" revision="a82868820d6350811b9ddfde4bf8ed5016084269"/>
   <project name="platform/external/junit" path="external/junit" revision="8f312e0c3d6dff30d015d2c85fdaae0a39220fd6"/>
-  <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="8b663ef01dcaadfe1dec7ba826e5cd1cf0bb2c91"/>
+  <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="e3aa32726e5258ae2039c39814e0f2909da1fa5d"/>
   <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="52447887e50b49f33f959077c31232edff6659d8"/>
   <project name="platform/external/libcxx" path="external/libcxx" revision="3744ab214cc7d6476daba5a893d8751dc819e909"/>
   <project name="platform/external/libcxxabi" path="external/libcxxabi" revision="71c03f185750080a99cfce6ff0cc4684624fe454"/>
@@ -170,7 +170,7 @@
   <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" revision="dfb9fe2f1ce9ac16f46e27c15b079fcc3d568378"/>
   <project groups="pdk" name="platform/external/libsepol" path="external/libsepol" revision="d26204e7d0a3be178a97d4920b82007e05a2a632"/>
   <project name="platform/external/libssh2" path="external/libssh2" revision="2bb40f2445cab3ba588efb29e1835cdba2b27248"/>
-  <project name="platform/external/libunwind" path="external/libunwind" revision="fac2c505835c9159c1c4a03679ef87dc80b91041"/>
+  <project name="platform/external/libunwind" path="external/libunwind" revision="152ef50ce718520407ba98f9217317adac8e901a"/>
   <project name="platform/external/libusb" path="external/libusb" revision="2801917fe150393d4f4a354165fe89550ae22613"/>
   <project name="platform/external/libusb-compat" path="external/libusb-compat" revision="94867ba54eb7faa8efca81cf2214d00bb9143d27"/>
   <project name="platform/external/libvorbis" path="external/libvorbis" revision="de559619fd4dd0d2d9608436696fd44bdf74eba8"/>
@@ -306,7 +306,7 @@
   <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="c32caab84ff9edc1489ed6c8079c7d252caafc4d"/>
   <project name="platform/libcore" path="libcore" revision="737ea55f0a003a07b90f88338da12b11b7d2859a"/>
   <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper" revision="e2564566790ab2689c102dc46eea89f06caa0b86"/>
-  <project name="platform/ndk" path="ndk" revision="60c292b394b287ee377e0effa90bcf875bb61d13"/>
+  <project name="platform/ndk" path="ndk" revision="72a965f73487da2907d5485795c63d2a5a9190e2"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="80327793c4b4ebf4a6a53b72e46c477afe18f135"/>
   <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="7efa9db2129c99475684a2e44c4fb89cce3134bc"/>
   <project name="platform/packages/apps/Browser" path="packages/apps/Browser" revision="fe4083510dc773911651456f150bf5432f81a6c0"/>
@@ -429,10 +429,10 @@
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="1dffc580d656397f0ffca65820aac524a7ba6f77"/>
   <project name="platform/prebuilts/runtime" path="prebuilts/runtime" revision="56e663b8ec9cd0df9ce5afdc7b7d56460faf44c8"/>
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="75f9bfb8b097c0f2613818a5f84e35a019b030d7"/>
-  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="b3c568338f1d9949321edb244e69a2df17818531"/>
+  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="dbdc5dc2953a996ac3dc54579bb7be54d9c7ad2e"/>
   <project name="platform/sdk" path="sdk" revision="9746f34af612629b65507e57f667d05e729fa057"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="8d35442b18e9dddfdde89c81e0cc910c70a12202"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="c26f208487aa1d7cfb9baf2d0579a5696875c5d0"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="98d3aa3f0d76190dbeea6248fffe326f7b6fe47d"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="5fb7c3e2503a1eaba370cb0a111448c2975584af"/>
   <project name="platform/system/keymaster" path="system/keymaster" revision="675257e83c8a92ae7d58e321c3800d55a1a3698d"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="89a2450a407ef237e5e35fb21a682758cc6b5f5a"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="100457df47b8a453eb94df3cf2e87f6248e783d1"/>
