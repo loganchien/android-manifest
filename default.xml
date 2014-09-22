@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="b69b7d7fba2a03faa1405da5bde9b6b559c758b2">
+  <project groups="pdk" name="platform/build" path="build" revision="c5a99042e944787b2cd5f2e93ba4775ffd9e36fc">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="4266fd721b17f1a95de619c55f69dff16f768662"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="413de5b0d4ddcf039aaef8b40a5f02d41dbb06e6"/>
+  <project name="platform/art" path="art" revision="b36bba6d35e88687852b108c8d4b73b3ec2a9397"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="9f423c554a0ffcee2e34472bf0bc1aef3621a822"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="974fe112ae6df95ca6d49688d6e3e459d87e16de"/>
   <project groups="cts" name="platform/cts" path="cts" revision="991512bf4e033709d59cbd30447afeb1f417e226"/>
@@ -17,7 +17,7 @@
   <project name="platform/developers/demos" path="developers/demos" revision="64526120cd8da89bcb9a48acf95307d2c172a6e8"/>
   <project name="platform/developers/docs" path="developers/docs" revision="c0b835ddd9acc27176dc9a0f7d1aa2faf5d51806"/>
   <project name="platform/developers/samples/android" path="developers/samples/android" revision="dea82fa23f038d66bd9cfdff2afb8ef22add1c4f"/>
-  <project name="platform/development" path="development" revision="eef4aba8b8edd09768178f81f3293552cc52e64c"/>
+  <project name="platform/development" path="development" revision="217d230af8f29583c5be96b0870fe8e187033bc2"/>
   <project groups="device,flo" name="device/asus/deb" path="device/asus/deb" revision="0ce3a783d549d023ddc553a04fed717ffb2ff533"/>
   <project groups="device,flo" name="device/asus/flo" path="device/asus/flo" revision="55ea79b11f9f82b2aa03f44a3429112fc5c06d07"/>
   <project groups="device,flo" name="device/asus/flo-kernel" path="device/asus/flo-kernel" revision="6d74123947016999ae62d9c3067ae97782fdba21"/>
@@ -47,7 +47,7 @@
   <project name="platform/external/android-mock" path="external/android-mock" revision="4fe497660c2e939300dc5b743d662aef458b1726"/>
   <project name="platform/external/ant-glob" path="external/ant-glob" revision="0f189400fd2a36bf11bfb058e7f3917eb7ed163a"/>
   <project name="platform/external/antlr" path="external/antlr" revision="47997265eeb7d954a32ece693bbe6dab740872dd"/>
-  <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="6575e82647b3f7764a30e3af8bc38c78e35e12a4"/>
+  <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="d4daf0acc759f4bb512bb4749c6ba86f22eb9cdb"/>
   <project name="platform/external/apache-http" path="external/apache-http" revision="85ed0e10781c3c57343300a02556dd5131c450aa"/>
   <project name="platform/external/apache-qp" path="external/apache-qp" revision="64ea622b23e6612eb8e7dcae6bfd4314beb022a8"/>
   <project name="platform/external/apache-xml" path="external/apache-xml" revision="00ee83ff1bd827a852065986ed0da7a3ded57a55"/>
@@ -115,7 +115,7 @@
   <project name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb"/>
   <project name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="73b6e3eb4e944338edd80b4f27c29b7aa31c76f2"/>
   <project name="platform/external/fdlibm" path="external/fdlibm" revision="c831c726067e0d8a05362e710e2405f0eff81e07"/>
-  <project name="platform/external/fio" path="external/fio" revision="073c0a9dd6ab1d60b80bb45d6dfcfea97402fed5"/>
+  <project name="platform/external/fio" path="external/fio" revision="b287c3293081dd98182a026a15e63536148b3287"/>
   <project groups="pdk" name="platform/external/flac" path="external/flac" revision="7f32dd57579bdff88e46e1e403154be0b99165da"/>
   <project groups="pdk" name="platform/external/freetype" path="external/freetype" revision="899c67b6cfcd2010784fbf08c5415af16c526e0c"/>
   <project name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="17a1471db8c528cd9d44ec4385d2eb3614138856"/>
@@ -187,7 +187,7 @@
   <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="b25c2507ecc3f674e3b4f0a770acf9ad8fd874d0"/>
   <project name="platform/external/mesa3d" path="external/mesa3d" revision="97d3f36a59ea448fa77e47a90bf04f1254670542"/>
   <project name="platform/external/messageformat" path="external/messageformat" revision="a5e918984692c683ec42bfc9cd33de96f3c6460b"/>
-  <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="d2b5c0ede63db6e5390c680884ca65f612173da0"/>
+  <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="049d9caadea06e990fa2f890b4e611adfdf01055"/>
   <project name="platform/external/mockito" path="external/mockito" revision="4d0dcd53b27a243baf72ee0b127b188a058b318d"/>
   <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="2f7659c426de53122ee7922b0981058a900124a7"/>
   <project name="platform/external/mp4parser" path="external/mp4parser" revision="16051e950485c6b62127c0446a760111de1a0cb9"/>
@@ -202,7 +202,7 @@
   <project name="platform/external/noto-fonts" path="external/noto-fonts" revision="90372d894b5d9c9f2a111315d2eb3b8de1979ee4"/>
   <project name="platform/external/oauth" path="external/oauth" revision="bc170f58de82000ed6460f111686a850a1890c07"/>
   <project name="platform/external/objenesis" path="external/objenesis" revision="2a7655c0d503fcf5989098f65bf89eae78c32e5a"/>
-  <project name="platform/external/okhttp" path="external/okhttp" revision="00de455447fb6d122f97b1dcc9d8f74998967c86"/>
+  <project name="platform/external/okhttp" path="external/okhttp" revision="2ef5d26d620c505a2ce83f6ff580cccd66242a04"/>
   <project name="platform/external/open-vcdiff" path="external/open-vcdiff" revision="6d29f2f083baf8250db94ed0b4807e513a84163d"/>
   <project name="platform/external/opencv" path="external/opencv" revision="4a99e243b42afcb885d036bb451eb3c2739275b6"/>
   <project name="platform/external/openfst" path="external/openfst" revision="b7434caa51427a0f5ab5c807e1a92d6ca2af8884"/>
@@ -222,7 +222,7 @@
   <project name="platform/external/robolectric" path="external/robolectric" revision="6bf395c984ed3f69711663b006aeffbb0f7e8a90"/>
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="dde037b82e5cd6215244e3240dbaad417928eafa"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="dd053a9b891195439b1c0848cb0e8a6e17b4b9bc"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="642b80427ec2e95eb13cf03a74d814f240813e71"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="5b46587dc87803ceff90377681f9c023b50aee56"/>
   <project name="platform/external/skia" path="external/skia" revision="d6f2c76fdb9b0469261fa2db0b29ed48c7ac38b5"/>
   <project name="platform/external/smack" path="external/smack" revision="d7955ce24d294fb2014c59d11fca184471056f44"/>
@@ -233,7 +233,7 @@
   <project name="platform/external/srec" path="external/srec" revision="540e7ee8dbf1d7ee72ef45c92efbebcb89bf6d1a"/>
   <project name="platform/external/srtp" path="external/srtp" revision="98bd63b48a31b4633cdfdc8138577dfa6d8dd2a6"/>
   <project groups="pdk" name="platform/external/stlport" path="external/stlport" revision="27757ed969c75ac5d6ec2eb6bbea0a12b2d1b700"/>
-  <project name="platform/external/strace" path="external/strace" revision="133fd4c5949d3b8c837f569270e1bff626251cc0"/>
+  <project name="platform/external/strace" path="external/strace" revision="42c43ec21cbc316cd95fc54c1dd4133525bb2514"/>
   <project name="platform/external/stressapptest" path="external/stressapptest" revision="0956427aa995561acb4471764158ae057a36dad5"/>
   <project name="platform/external/svox" path="external/svox" revision="ad0a55bd0e13a27ed11034346eee9c47e3684ef2"/>
   <project name="platform/external/tagsoup" path="external/tagsoup" revision="a97828cb3f8f3a1af8470e55d3c5cd62d6a7cb4c"/>
@@ -254,8 +254,8 @@
   <project groups="pdk" name="platform/external/yaffs2" path="external/yaffs2" revision="a2cff2275e1b501ff478b03757d6e4f05fddc2db"/>
   <project groups="pdk" name="platform/external/zlib" path="external/zlib" revision="8d977782c1cfe9d75cc9a464439c2ff1e27e1665"/>
   <project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f"/>
-  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="14fc930d5d2ef272b39342fa083f4097464fc9ea"/>
-  <project name="platform/frameworks/base" path="frameworks/base" revision="b7442bbc8c27b0643b7235076ee151b8257bf28d"/>
+  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="fd7e04401fe28fdc093dfe4b399240378fd1f2f8"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="fa4362982c4e5d07c158c470f957f6ffd2fc7cc9"/>
   <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="14ed738d702861137663653cf0301fd680e8ae15"/>
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="7488ffd672ad1146d8a615f03a96a79794cd0d73"/>
   <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="474ce6690630e4fda8174cbccb752617b9896b4b"/>
