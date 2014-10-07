@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="642c81ea4559836236a38123feec3d8e51d4b9c2">
+  <project groups="pdk" name="platform/build" path="build" revision="9bf56c5e911856bc55693f5723a53271147e583e">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="da20867f1967cab18722b507758e90913410b8e8"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="9969fecad23edebcbc4f32a50dc65a2876a2478f"/>
+  <project name="platform/art" path="art" revision="1000e69b7e11348f2e1d3ba67339616a647f53d7"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="eeb9aa02b7f307a1d9b80731dd69ef9dd2f47e47"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="28ffde5ebd33d5b693906a93087e6eea627cd8d0"/>
   <project groups="cts" name="platform/cts" path="cts" revision="4aa17ebc9e4c4e2566500a5d5b33767abeaaf8aa"/>
@@ -47,7 +47,7 @@
   <project name="platform/external/android-mock" path="external/android-mock" revision="4fe497660c2e939300dc5b743d662aef458b1726"/>
   <project name="platform/external/ant-glob" path="external/ant-glob" revision="0f189400fd2a36bf11bfb058e7f3917eb7ed163a"/>
   <project name="platform/external/antlr" path="external/antlr" revision="47997265eeb7d954a32ece693bbe6dab740872dd"/>
-  <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="44eb9e58deb4e1503267edc0d20ba2888197380e"/>
+  <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="336059d551993b165ba3093bfe4f22f98a12d923"/>
   <project name="platform/external/apache-http" path="external/apache-http" revision="85ed0e10781c3c57343300a02556dd5131c450aa"/>
   <project name="platform/external/apache-qp" path="external/apache-qp" revision="64ea622b23e6612eb8e7dcae6bfd4314beb022a8"/>
   <project name="platform/external/apache-xml" path="external/apache-xml" revision="00ee83ff1bd827a852065986ed0da7a3ded57a55"/>
@@ -114,7 +114,7 @@
   <project groups="pdk" name="platform/external/expat" path="external/expat" revision="907ec055718996baf36961e7f47f8447e49b3865"/>
   <project name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb"/>
   <project name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="73b6e3eb4e944338edd80b4f27c29b7aa31c76f2"/>
-  <project name="platform/external/fdlibm" path="external/fdlibm" revision="c831c726067e0d8a05362e710e2405f0eff81e07"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm" revision="8b08bde15b80b40d3cbb731f5415434fc843d800"/>
   <project name="platform/external/fio" path="external/fio" revision="b287c3293081dd98182a026a15e63536148b3287"/>
   <project groups="pdk" name="platform/external/flac" path="external/flac" revision="7f32dd57579bdff88e46e1e403154be0b99165da"/>
   <project groups="pdk" name="platform/external/freetype" path="external/freetype" revision="899c67b6cfcd2010784fbf08c5415af16c526e0c"/>
@@ -188,7 +188,7 @@
   <project name="platform/external/messageformat" path="external/messageformat" revision="fb716cce89ee080907bb5d43dfc84a657e4e5282"/>
   <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="1f487419252b1b501e57d8944e854b1c349f92f7"/>
   <project name="platform/external/mockito" path="external/mockito" revision="4d0dcd53b27a243baf72ee0b127b188a058b318d"/>
-  <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="2f7659c426de53122ee7922b0981058a900124a7"/>
+  <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="a09bacce76b6ece0de2ca71c397dd4b96d101904"/>
   <project name="platform/external/mp4parser" path="external/mp4parser" revision="16051e950485c6b62127c0446a760111de1a0cb9"/>
   <project name="platform/external/mtpd" path="external/mtpd" revision="5ea8006691664b7e6d46d6a6dc889eac91b7fe37"/>
   <project name="platform/external/naver-fonts" path="external/naver-fonts" revision="3bba7d2430bc3ec8105678a27f03fb080f0f8384"/>
@@ -221,7 +221,7 @@
   <project name="platform/external/robolectric" path="external/robolectric" revision="6bf395c984ed3f69711663b006aeffbb0f7e8a90"/>
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="dde037b82e5cd6215244e3240dbaad417928eafa"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="c6cb6ac451b0faf6e9344282a909e910f819a296"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="59bc00ab898bc4d06593051b0fe4e702ca2569e2"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="8372b6c4430169593c20082e209fd7e5ed777655"/>
   <project name="platform/external/skia" path="external/skia" revision="0c208f27a4832430cd16814f9a8455b64b932f81"/>
   <project name="platform/external/smack" path="external/smack" revision="d7955ce24d294fb2014c59d11fca184471056f44"/>
@@ -253,7 +253,7 @@
   <project groups="pdk" name="platform/external/yaffs2" path="external/yaffs2" revision="a2cff2275e1b501ff478b03757d6e4f05fddc2db"/>
   <project groups="pdk" name="platform/external/zlib" path="external/zlib" revision="8d977782c1cfe9d75cc9a464439c2ff1e27e1665"/>
   <project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f"/>
-  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="dc28fa7eb4a51ea77c095b0cb9fd757755525492"/>
+  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="ae38d425fdb3e3fea015c161d635d631172350c3"/>
   <project name="platform/frameworks/base" path="frameworks/base" revision="6ba13ac56663a45a7f16feb465d451f0180fae26"/>
   <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="40990623cd268dfcf5503abcd58465d14453d2f4"/>
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="7488ffd672ad1146d8a615f03a96a79794cd0d73"/>
@@ -278,7 +278,7 @@
   <project name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="5907243e6cf0603adf266ebfa7ee5ee465b9c596"/>
   <project name="platform/frameworks/opt/widget" path="frameworks/opt/widget" revision="466e0e0307b3f6aa4f4be3d9419b5996bd389da5"/>
   <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="2f80b53e682a00494c222a12b29c62261b6ecadb"/>
-  <project name="platform/frameworks/support" path="frameworks/support" revision="e973a786f554d28c6e4910013cb23679c3b9b2a4"/>
+  <project name="platform/frameworks/support" path="frameworks/support" revision="ed98dbef0c1794f63ef460146b45c9c3402fad4b"/>
   <project name="platform/frameworks/testing" path="frameworks/testing" revision="5c8e0271db889518f5969b142a37faa01a4ee54d"/>
   <project name="platform/frameworks/volley" path="frameworks/volley" revision="5d0aec46bdff7ab15c02e2492837d97eda3a67e0"/>
   <project name="platform/frameworks/webview" path="frameworks/webview" revision="5cdf02141e137e7094b3f7220571e5a53a7706f0"/>
@@ -304,7 +304,7 @@
   <project groups="exynos5" name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="2113fb14d60becb6d419513f3752d4efa2f6a4cc"/>
   <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="949aad363a9cc794f9ac8fd42338ae1678e50bc1"/>
   <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="c32caab84ff9edc1489ed6c8079c7d252caafc4d"/>
-  <project name="platform/libcore" path="libcore" revision="73dbf1ce185f7418058f886cccce4b593ca14e62"/>
+  <project name="platform/libcore" path="libcore" revision="7d7c48079d8ac61068cac7caf0072fa6c1fbe0a2"/>
   <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper" revision="221e49a1ca260781ecdabdfa106d2e47d444e6de"/>
   <project name="platform/ndk" path="ndk" revision="cab12cdf943a439ffa5dfba1e66b749520982a4f"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="80327793c4b4ebf4a6a53b72e46c477afe18f135"/>
@@ -430,7 +430,7 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="75f9bfb8b097c0f2613818a5f84e35a019b030d7"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="96262b45d66a3063c99a2b5152249cf8b88648a1"/>
   <project name="platform/sdk" path="sdk" revision="cbf40c838318e57565a6325d22b4952f9fd650af"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="b1dd4af7c41dc0d73f9431ec7adabc342e13434e"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="a083c8578a8cfa44b50e6d1159b83182aba63bcb"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="c0daa7771eeaa9608c623794d90b8e81463ef857"/>
   <project name="platform/system/keymaster" path="system/keymaster" revision="675257e83c8a92ae7d58e321c3800d55a1a3698d"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="89a2450a407ef237e5e35fb21a682758cc6b5f5a"/>
