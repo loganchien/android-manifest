@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="97ef1d46cdae3776e49900b2ed92748f6127bbb0">
+  <project groups="pdk" name="platform/build" path="build" revision="427d1e98eceb78f5cb8f1e50d00d342fc7f359c6">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="e0205d519dd417f749243b42b8711dfa313e5390"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="13dcb88b0f8ce238456059fdc0b6c946caed1e3a"/>
+  <project name="platform/art" path="art" revision="560473c74cc3755b652f86a61039e4a12c08afe2"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="f362e9fb33722f89cebe65ddf2f07d2b07e4390e"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="4f66469b29a34811b69518a266be31fe42cc111b"/>
   <project groups="cts" name="platform/cts" path="cts" revision="55c46bb3472ce28c47e7ee89edf7cbdb4d6f4dcf"/>
@@ -96,7 +96,7 @@
   <project name="platform/external/chromium_org/v8" path="external/chromium_org/v8" revision="ef055f47ab5ab7698b9c05e5d8b19d55af9d3e2c"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang" revision="9e3e0e73011baba4988e958144fcc7ca3ae1261e"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="345db5eaa81b8135cc03346b2e62ebd7f73e9f5d"/>
-  <project name="platform/external/conscrypt" path="external/conscrypt" revision="78b425a3489268653d32fda8edfca643fb645702"/>
+  <project name="platform/external/conscrypt" path="external/conscrypt" revision="759b19843b061ca4707c3b5edcd1161522109ecd"/>
   <project name="platform/external/dexmaker" path="external/dexmaker" revision="2b528c4b156f2de5c641875b98e59e0b09ebaccd"/>
   <project name="platform/external/dhcpcd" path="external/dhcpcd" revision="e8960dc707b76d83fbf8a650314b93d8c28b1a38"/>
   <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="7674911bc9d10adf57c2c2d15d0c641b48e4afe6"/>
@@ -213,7 +213,7 @@
   <project name="platform/external/robolectric" path="external/robolectric" revision="6bf395c984ed3f69711663b006aeffbb0f7e8a90"/>
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="789860d0e09a2d98976e028179afe0446f2172cc"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="5fad3d98deadde8900130fe8980032728ad75fd0"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="0ae33a8d1439800439db1c22da0d9a2073fb3a42"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="8372b6c4430169593c20082e209fd7e5ed777655"/>
   <project name="platform/external/skia" path="external/skia" revision="eae531fdfcf03e266a18f6a313d002aad58e0692"/>
   <project name="platform/external/smack" path="external/smack" revision="d7955ce24d294fb2014c59d11fca184471056f44"/>
@@ -245,8 +245,8 @@
   <project groups="pdk" name="platform/external/yaffs2" path="external/yaffs2" revision="a2cff2275e1b501ff478b03757d6e4f05fddc2db"/>
   <project groups="pdk" name="platform/external/zlib" path="external/zlib" revision="8d977782c1cfe9d75cc9a464439c2ff1e27e1665"/>
   <project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f"/>
-  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="589a89f5a2a9aa08bdd9b78727f608f2f178f107"/>
-  <project name="platform/frameworks/base" path="frameworks/base" revision="3028394c4691db9dec6bde04a7ed927e7501bd6a"/>
+  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="686a0c4db5e90b811b1fbe1dba3638522ef4b7a1"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="43a9264619e08f464dd4f184e53441a440cca09f"/>
   <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="40990623cd268dfcf5503abcd58465d14453d2f4"/>
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="7488ffd672ad1146d8a615f03a96a79794cd0d73"/>
   <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="1a3db4a5943e662eea542dc58398a4c7ab656cc4"/>
@@ -421,8 +421,8 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="a57a682a74a9136ec3b8b51b6c4accbca9efafa4"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="c28278adcaf8b0f4dcd7de1fb5268cffa11f5eb0"/>
   <project name="platform/sdk" path="sdk" revision="cf7e8c7948b3b811a6693ac871d2578a2bdf0a46"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="649891267f3b0db1c6c37152fc570a4824d6aa39"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="78b686d1e88e81f29c8cfc479115b356ca72f661"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="91b76d7de3029f6e617d640ca1b9ef844fa44477"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="726aff1955d7c143657e0ec333aaad8339a8a58b"/>
   <project name="platform/system/keymaster" path="system/keymaster" revision="675257e83c8a92ae7d58e321c3800d55a1a3698d"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="89a2450a407ef237e5e35fb21a682758cc6b5f5a"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="388cd671ff5237aabcd728794af49d33e18fda8b"/>
