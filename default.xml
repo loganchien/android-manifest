@@ -3,11 +3,11 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="871b8df128b144f39d40889e463722a032c4d246">
+  <project groups="pdk" name="platform/build" path="build" revision="36084e64a1b603f0ca848bba5ca91938f853dc4c">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="8b557af85871e5086589afd2b3a17089d0f67df8"/>
+  <project name="platform/art" path="art" revision="57b4d1c44e246dfd4aaef2d23b20a696a0c5e57e"/>
   <project groups="pdk" name="platform/bionic" path="bionic" revision="e38bf839837d11542e7d1deb00d81542a0ef55b7"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="4f66469b29a34811b69518a266be31fe42cc111b"/>
@@ -26,7 +26,7 @@
   <project name="device/common" path="device/common" revision="6a2995683de147791e516aae2ccb31fdfbe2ad30"/>
   <project groups="pdk" name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon" revision="8bcf4b7a6380b26c2b42dae00dd8443de2a8e12c"/>
   <project groups="pdk" name="device/generic/common" path="device/generic/common" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461"/>
-  <project groups="pdk" name="device/generic/goldfish" path="device/generic/goldfish" revision="7472654eec2594e6476b38cea396a3f213dedd1a"/>
+  <project groups="pdk" name="device/generic/goldfish" path="device/generic/goldfish" revision="5a7d8f2d70c2c84f0f84c2b8d0ac3fc119935259"/>
   <project groups="pdk" name="device/generic/mips" path="device/generic/mips" revision="dd06e7883227cc68bb1206584c8e3a768e49d02d"/>
   <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" path="device/generic/mini-emulator-armv7-a-neon" revision="2a7ade61377b7906187ab46b5859c896baa0ab0e"/>
   <project groups="pdk" name="device/generic/mini-emulator-mips" path="device/generic/mini-emulator-mips" revision="2ff06dda649ba43507a911057f7854a3373ef7d6"/>
@@ -147,7 +147,7 @@
   <project name="platform/external/junit" path="external/junit" revision="8f312e0c3d6dff30d015d2c85fdaae0a39220fd6"/>
   <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="0de034a4ab74ecf1cab41e58f0e8aa92551141bf"/>
   <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="52447887e50b49f33f959077c31232edff6659d8"/>
-  <project name="platform/external/libcxx" path="external/libcxx" revision="48dfa099ea8b6043c67eb3fdc9aa3d0b4fe56e2a"/>
+  <project name="platform/external/libcxx" path="external/libcxx" revision="2175caa94cef44f9eabb70c53d63630228dec1a2"/>
   <project name="platform/external/libcxxabi" path="external/libcxxabi" revision="e3e9a2a4f28eecf404101d137cb98e4e7d002cae"/>
   <project name="platform/external/libexif" path="external/libexif" revision="25d371312cee1452a2adcf8b7f6cad6267bda32d"/>
   <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" revision="50761abed8f4734970874165b386cfd4d9599db4"/>
@@ -198,7 +198,7 @@
   <project name="platform/external/objenesis" path="external/objenesis" revision="2a7655c0d503fcf5989098f65bf89eae78c32e5a"/>
   <project name="platform/external/okhttp" path="external/okhttp" revision="80bb58612f5fb37847591831ff65b620785a1ed8"/>
   <project name="platform/external/opencv" path="external/opencv" revision="4a99e243b42afcb885d036bb451eb3c2739275b6"/>
-  <project groups="pdk" name="platform/external/openssl" path="external/openssl" revision="54efc1885c3a4fd0f436518431577e8e7760b18c"/>
+  <project groups="pdk" name="platform/external/openssl" path="external/openssl" revision="ed6913e2f69e46626c31231b79d9017c157660f6"/>
   <project name="platform/external/oprofile" path="external/oprofile" revision="3722f1053f4cab90c4daf61451713a2d61d79c71"/>
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="6a304233f9f2010821a5a1dd40e2832b68353a3c"/>
   <project name="platform/external/pcre" path="external/pcre" revision="1dceafb0c217395f704290bc3f176d5f008b791c"/>
@@ -206,7 +206,7 @@
   <project name="platform/external/ppp" path="external/ppp" revision="8b58d9bd02e2c55f547fafbe9ba55b1160665761"/>
   <project groups="pdk-java" name="platform/external/proguard" path="external/proguard" revision="3fd19dba2bdc0c4b64afda4d75836e1dcf7abf97"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" revision="1ed1ec3609812a7818689cde01b6ce92d3f2315a"/>
-  <project name="platform/external/qemu" path="external/qemu" revision="73d1fbf9477185d4f003818d829cfdeae67f2f4a"/>
+  <project name="platform/external/qemu" path="external/qemu" revision="cac8a01c4099f2070161e2affb45957e94535b74"/>
   <project name="platform/external/qemu-pc-bios" path="external/qemu-pc-bios" revision="20349dae98d7de09a7e390d4a706c64f1db6edc2"/>
   <project name="platform/external/regex-re2" path="external/regex-re2" revision="a1eaef0f4fce3c358b850dabd724ca66c5ec2d81"/>
   <project name="platform/external/replicaisland" path="external/replicaisland" revision="99e2e54c5d036048caf09bb05eea0969de093104"/>
@@ -235,7 +235,7 @@
   <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="143125ff631c481d590cae0d7cc9ccfaaca269c7"/>
   <project groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="7974ba13a557b3352b0fd4b2a8c377cb530e886e"/>
   <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" revision="a4d929e3adc82981f7378933e9343a82d99fd867"/>
-  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" revision="904af0ed95befb02ce07953418efa18441d421b0"/>
+  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" revision="9033125a119c2ca1f14f0af09b2e5be8e61131d0"/>
   <project name="platform/external/vixl" path="external/vixl" revision="49d4fae5bf057e48eb869261ae4006d3597a3ed3"/>
   <project name="platform/external/webp" path="external/webp" revision="0db01fc3411621bec473d50db0071fd2a225962e"/>
   <project groups="pdk" name="platform/external/webrtc" path="external/webrtc" revision="8fd3f61c995481e581d45719458ddc237fe35f83"/>
@@ -283,7 +283,7 @@
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="4c20a09e8684657448f0bc97a2da4e56c94d484e"/>
   <project groups="qcom" name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="6430d90d63db8b8af4c76cb063badf7b1ef43834"/>
   <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="d2b071c3683bace40c9ed666107367dac5a5bb45"/>
-  <project groups="qcom" name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="bd66e7bbc48b8aada729fa13feef4086f70cc2f6"/>
+  <project groups="qcom" name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="edec06f0390d6184c1b537a41083bde60b5eb044"/>
   <project groups="qcom" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="fb37b11703cb95bef058b29715f879c5afd7b908"/>
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" revision="70d36107318e1d3f7abf62a56279b3f9da3ff000"/>
   <project groups="qcom" name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="a2cbd041e7ad40c8b5bc1e97441c7c128ae64ae2"/>
@@ -419,11 +419,11 @@
   <project groups="linux" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="5de4f653a1cff7d7acbbb933711537ef47e2723c"/>
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="1dffc580d656397f0ffca65820aac524a7ba6f77"/>
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="a57a682a74a9136ec3b8b51b6c4accbca9efafa4"/>
-  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="a8fb46d778fa4f9a658937f3309802884a3fa39e"/>
-  <project name="platform/sdk" path="sdk" revision="791087a7c0f43f30d0fa71b0e83361a8ade83a72"/>
+  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="b2d73a15feb3ddcc8dc18833280249e85fcb2de7"/>
+  <project name="platform/sdk" path="sdk" revision="72e9658d006ead8e59f3d08dcf79b516c7fb1fac"/>
   <project groups="pdk" name="platform/system/core" path="system/core" revision="b968d5c8468c9b0707f88f773fae16074e9018cf"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="726aff1955d7c143657e0ec333aaad8339a8a58b"/>
-  <project name="platform/system/keymaster" path="system/keymaster" revision="675257e83c8a92ae7d58e321c3800d55a1a3698d"/>
+  <project name="platform/system/keymaster" path="system/keymaster" revision="7c0a82b7528c51299bf8dda6beb5e1fc8bf54b23"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="89a2450a407ef237e5e35fb21a682758cc6b5f5a"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="388cd671ff5237aabcd728794af49d33e18fda8b"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="b570de568adbc2a8ffcb356a56373c10be03b650"/>
