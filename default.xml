@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build" revision="36084e64a1b603f0ca848bba5ca91938f853dc4c">
+  <project groups="pdk" name="platform/build" path="build" revision="bd0e8af734d5b6e28e2710bf53beb1b674e3fdb2">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
-  <project name="platform/art" path="art" revision="57b4d1c44e246dfd4aaef2d23b20a696a0c5e57e"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="e38bf839837d11542e7d1deb00d81542a0ef55b7"/>
+  <project name="platform/art" path="art" revision="9a41fb1616df7e966e58cabc2abc1b5d90c9e14f"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="38ff8822763a30d4c9033a38ec8b71fcd17aba87"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="4f66469b29a34811b69518a266be31fe42cc111b"/>
   <project groups="cts" name="platform/cts" path="cts" revision="55c46bb3472ce28c47e7ee89edf7cbdb4d6f4dcf"/>
@@ -17,7 +17,7 @@
   <project name="platform/developers/demos" path="developers/demos" revision="64526120cd8da89bcb9a48acf95307d2c172a6e8"/>
   <project name="platform/developers/docs" path="developers/docs" revision="c0b835ddd9acc27176dc9a0f7d1aa2faf5d51806"/>
   <project name="platform/developers/samples/android" path="developers/samples/android" revision="dea82fa23f038d66bd9cfdff2afb8ef22add1c4f"/>
-  <project name="platform/development" path="development" revision="f8d4dfbff6035e87e941cb75affac86c6d7e144e"/>
+  <project name="platform/development" path="development" revision="7d4c96124ca1d9002c73d4b0faf40d03ca30fc77"/>
   <project groups="device,flo" name="device/asus/deb" path="device/asus/deb" revision="0ce3a783d549d023ddc553a04fed717ffb2ff533"/>
   <project groups="device,flo" name="device/asus/flo" path="device/asus/flo" revision="13b0b88382596da2833a7907dd3c9012b5fe07c4"/>
   <project groups="device,flo" name="device/asus/flo-kernel" path="device/asus/flo-kernel" revision="6d74123947016999ae62d9c3067ae97782fdba21"/>
@@ -26,7 +26,7 @@
   <project name="device/common" path="device/common" revision="6a2995683de147791e516aae2ccb31fdfbe2ad30"/>
   <project groups="pdk" name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon" revision="8bcf4b7a6380b26c2b42dae00dd8443de2a8e12c"/>
   <project groups="pdk" name="device/generic/common" path="device/generic/common" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461"/>
-  <project groups="pdk" name="device/generic/goldfish" path="device/generic/goldfish" revision="5a7d8f2d70c2c84f0f84c2b8d0ac3fc119935259"/>
+  <project groups="pdk" name="device/generic/goldfish" path="device/generic/goldfish" revision="3fe2263e2429a0611796e3e84c6f8b54bc30aa48"/>
   <project groups="pdk" name="device/generic/mips" path="device/generic/mips" revision="dd06e7883227cc68bb1206584c8e3a768e49d02d"/>
   <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" path="device/generic/mini-emulator-armv7-a-neon" revision="2a7ade61377b7906187ab46b5859c896baa0ab0e"/>
   <project groups="pdk" name="device/generic/mini-emulator-mips" path="device/generic/mini-emulator-mips" revision="2ff06dda649ba43507a911057f7854a3373ef7d6"/>
@@ -165,7 +165,7 @@
   <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" revision="d0b768abcd2b4adb1853ac38e59aa80f09872ac3"/>
   <project groups="pdk" name="platform/external/libsepol" path="external/libsepol" revision="6b7fc04c339b9926ede48426e99b2621428a0d3d"/>
   <project name="platform/external/libssh2" path="external/libssh2" revision="2bb40f2445cab3ba588efb29e1835cdba2b27248"/>
-  <project name="platform/external/libunwind" path="external/libunwind" revision="4868ff1ab2b82a52a1abb48bcf6dcbf795d3c4db"/>
+  <project name="platform/external/libunwind" path="external/libunwind" revision="3e2103416e2ce4498d3533ec4d4776cd89838174"/>
   <project name="platform/external/libusb" path="external/libusb" revision="3a36cef7ef847d3839090a7c98eb961a602af55b"/>
   <project name="platform/external/libusb-compat" path="external/libusb-compat" revision="6d4ab8939e4784b2b6eb63d992cc4d44f953bb41"/>
   <project name="platform/external/libvorbis" path="external/libvorbis" revision="de559619fd4dd0d2d9608436696fd44bdf74eba8"/>
@@ -213,7 +213,7 @@
   <project name="platform/external/robolectric" path="external/robolectric" revision="6bf395c984ed3f69711663b006aeffbb0f7e8a90"/>
   <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be"/>
   <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="789860d0e09a2d98976e028179afe0446f2172cc"/>
-  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="c457572bdf4d85090582eb18db34b279967080d0"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="ca62a8b72be35de3781c1f8f16600cfeca874ef5"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="8372b6c4430169593c20082e209fd7e5ed777655"/>
   <project name="platform/external/skia" path="external/skia" revision="eae531fdfcf03e266a18f6a313d002aad58e0692"/>
   <project name="platform/external/smack" path="external/smack" revision="d7955ce24d294fb2014c59d11fca184471056f44"/>
@@ -405,6 +405,7 @@
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" revision="d9735fc81434f2af2c44d86ca57740c673c8d9bc"/>
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="e22e34fbd9f173a44f9aa541edd2fe992dbba283"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="fdd759c108d1ad27b9b6e134ee346c3b52d52125"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="a82e0ae9bff18791b27ba53bbd8bb195fa9cb4a1"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="2725a175a32032fb9a63e247c176ecc3d448ea27"/>
   <project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="03c23e514e09633c5eb6609d2ad59d3d86ab6901"/>
   <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" revision="c06b9b305c365163c99d4ffba49ac37ce2716024"/>
