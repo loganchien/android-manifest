@@ -3,12 +3,12 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk,tradefed" name="platform/build" path="build" revision="0616000d09905ac423dae0ffccdb0ef3fe24f36d">
+  <project groups="pdk,tradefed" name="platform/build" path="build" revision="88392fae52f2b72e5537bb88a073d527edf7c00d">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="1c7cf0400b5fd28491d2d670ac4482120542ce4b"/>
   <project groups="pdk" name="platform/art" path="art" revision="cd00b57f40da1a821c5dd3cb7000aa597dab61fc"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="d77c1ec90a17ac91c24904670ba9a3a60fe4cd3d"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="95a02366f2697ed65c4a2849a9cbde3d403142e3"/>
   <project groups="pdk-cw-fs" name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="d34b63780eaf80ba71279360dc1e2fdbdc488eec"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts" revision="275b9f8f9e5ac7ac70e7043ff9ddbc86a6cd9ced"/>
@@ -36,7 +36,7 @@
   <project groups="pdk" name="device/generic/mini-emulator-mips" path="device/generic/mini-emulator-mips" revision="3fdb24de40ca27da9a86f10f31314f2a13259db5"/>
   <project groups="pdk" name="device/generic/mini-emulator-x86" path="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579"/>
   <project groups="pdk" name="device/generic/mini-emulator-x86_64" path="device/generic/mini-emulator-x86_64" revision="673aae8bd65d9708821c4062f6a0364a859e7ae4"/>
-  <project name="device/generic/qemu" path="device/generic/qemu" revision="403ae22dfa8b29d74664ab1e1efe6d72f30ecf88"/>
+  <project name="device/generic/qemu" path="device/generic/qemu" revision="3f0d50b7e7d8a899bab15f5cbaeb0f51d1eea4d4"/>
   <project groups="pdk" name="device/generic/x86" path="device/generic/x86" revision="26d680b5edde00120726a05c204e97ddef3d246a"/>
   <project groups="pdk" name="device/generic/x86_64" path="device/generic/x86_64" revision="138339be1da9b0f34befe3751b0bae874d7253db"/>
   <project groups="device" name="device/google/accessory/arduino" path="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5"/>
@@ -261,7 +261,7 @@
   <project groups="pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="25a4b4b5c7451702a164c98ef502e41cc03e1e1f"/>
   <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="143125ff631c481d590cae0d7cc9ccfaaca269c7"/>
   <project groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="7974ba13a557b3352b0fd4b2a8c377cb530e886e"/>
-  <project groups="pdk" name="platform/external/toybox" path="external/toybox" revision="aeb6123e3cfe09823ac947af2ced108e7fd1194f"/>
+  <project groups="pdk" name="platform/external/toybox" path="external/toybox" revision="03275a865cd0481a74d09951295455c6e706e085"/>
   <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" revision="8335d8b2ef4d22dcaccda9726c3a1460be2bd86c"/>
   <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" revision="73b6f67e344b87a58525008e7559c93e00d38e0e"/>
   <project groups="pdk" name="platform/external/vixl" path="external/vixl" revision="e9c96f757f00b915dd1cb86447fb88f36cb54607"/>
@@ -337,7 +337,7 @@
   <project groups="qcom,qcom_audio" name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="bf93daed8583c0f2deec915c6f55064845f905e4"/>
   <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="d2b071c3683bace40c9ed666107367dac5a5bb45"/>
   <project groups="qcom,qcom_display" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="a3d647754dbc4b80d3039b09c0017c038c7363df"/>
-  <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="4750276b0d6e23e2673dc4b50a7cca706f9ae608"/>
+  <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="e5949fd1375692f23d2abd3bae1615ec68df2311"/>
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" revision="e8d59957d4935fb737ee3604d21b34fa3afb7e95"/>
   <project groups="qcom" name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="220d9e74da540461987b7c819237f92aab9e37aa"/>
   <project groups="qcom_msm8960" name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960" revision="c25a431842a26b5756b58a9d4a42c776e0457ba2"/>
@@ -484,7 +484,7 @@
   <project groups="pdk,tradefed" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="aba340a0b47f3bf28e65b098ed03fb5c94441ed4"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="0f09480f68f1b4c00d8d009c7209091a76c65845"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk" revision="d9a812c83bb870ebc0b0601fe749843cf8a75f07"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="456661e38cefe1afbf640036f710f0d481b64bf9"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="7f187c5f95d6bf0514e71e0e074768bd5395d45f"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="0bb5c17b81fb042c62e11c744c081ee4378c6a1c"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="4f854a6b87795fba2648fba1b9fc72bf690f93a2"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="29a4e2837b89114cc4da1f991badf2656f342cb5"/>
