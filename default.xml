@@ -3,18 +3,18 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk,tradefed" name="platform/build" path="build" revision="7a866d783c495b91ab4f8b74e4765a500eb4149d">
+  <project groups="pdk,tradefed" name="platform/build" path="build" revision="1318ec93e73513933ce250480cf7d66125797dfe">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="ac5ace67024f19917febc95468fd9d37088c1fd8"/>
   <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati" revision="ff2d59e2e082d17ae04f43d409244440a1687856"/>
-  <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" revision="d20b36be5d5cad88a7dc627da83459de36e39c6e">
+  <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" revision="7517ed0b467ccb4a06bfdd5147c3811daf4814e6">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project groups="pdk" name="platform/art" path="art" revision="9030e9a10f0b55c69983e2fb985c27a1b72ae39f"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="93bae32c27f41e55e1cf9a6f5f8a05fbc1feaf1d"/>
-  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="5b2191a9d64288398fea1a0149ee14b00004ac4b"/>
+  <project groups="pdk" name="platform/art" path="art" revision="834f4445e70543bfdbcdd6435ccceb7a6dd82c4d"/>
+  <project groups="pdk" name="platform/bionic" path="bionic" revision="2ed5852759a3326752e975fab57b1c96e1be74b5"/>
+  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="4ddd5edf31908db841ae4974433189408e321d64"/>
   <project groups="cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="9771e69af71d69d1ecd1ed9b9f0fe9aaa3226616"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="c2f1b7f6ec2de6c0d50177e366240bb85f6d48b2"/>
   <project name="platform/developers/build" path="developers/build" revision="c7b3164ea6897f12e502e0c42b93b02035c8f2b7"/>
@@ -52,7 +52,7 @@
   <project groups="device,bullhead" name="device/lge/bullhead-kernel" path="device/lge/bullhead-kernel" revision="9913ff739da1458b7e413858a412b2ec04a3ebec"/>
   <project groups="device,hammerhead,broadcom_pdk,generic_fs" name="device/lge/hammerhead" path="device/lge/hammerhead" revision="e2e993442ed56db6a3743607a8dfd58f370d7b0a"/>
   <project groups="device,hammerhead,broadcom_pdk,generic_fs" name="device/lge/hammerhead-kernel" path="device/lge/hammerhead-kernel" revision="49e61471c67fd2d9ea3e77ce9ffd79e645eb7f0e"/>
-  <project name="device/linaro/hikey" path="device/linaro/hikey" revision="307dc6063dd2256246f3793d66e0433a2251e8d5"/>
+  <project name="device/linaro/hikey" path="device/linaro/hikey" revision="3051d9ed7c9694cd21829ab44b659b25db4c8764"/>
   <project name="device/linaro/hikey-kernel" path="device/linaro/hikey-kernel" revision="73b00853bfe1f86335c7a831d02c13a61850b829"/>
   <project groups="device,shamu,broadcom_pdk" name="device/moto/shamu" path="device/moto/shamu" revision="dd80712eda8f60226f5889a6ac76bd4a697c271b"/>
   <project groups="device,shamu,broadcom_pdk" name="device/moto/shamu-kernel" path="device/moto/shamu-kernel" revision="fbc0db6a939881ca0a434a0574f7a5a32d5f1a1f"/>
@@ -68,7 +68,7 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/apache-harmony" path="external/apache-harmony" revision="f68094f795ff6d081fa3b9af06ed83303f9f8795"/>
   <project groups="pdk" name="platform/external/apache-http" path="external/apache-http" revision="bda9492f34192055d2f2662e46dcff831f0b3438"/>
   <project groups="pdk" name="platform/external/apache-xml" path="external/apache-xml" revision="458cfe9becb16b9b7a90784b813ad628f3114e6d"/>
-  <project name="platform/external/autotest" path="external/autotest" revision="5dfdb553dd534cf1cd333e3ca5b9a8c8b73baf0d"/>
+  <project name="platform/external/autotest" path="external/autotest" revision="8fd3ff1992964cf65e6343c6f2d0945c64f99eaa"/>
   <project name="platform/external/avahi" path="external/avahi" revision="cff8f53637a857a54c099bd63ad12d49b9a4d1e2"/>
   <project groups="pdk" name="platform/external/bison" path="external/bison" revision="c2418b886165add7f5a31fc5609f0ce2d004a90e"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109"/>
@@ -86,7 +86,7 @@
   <project groups="pdk" name="platform/external/clang" path="external/clang" revision="797e8a9e683f98cd1497081ce9e9886d7f4e7008"/>
   <project groups="pdk-fs" name="platform/external/cmockery" path="external/cmockery" revision="77b7379c087dd5e6383aa502e36428adcdd46aab"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="bce209f5b522db932854bcd423605ad1c79dad4c"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/conscrypt" path="external/conscrypt" revision="a1ea2ec321dbe79e6f16089bded6bbec2b38da03"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/conscrypt" path="external/conscrypt" revision="792eec0172c1ae97e549460ba7690e0a7973b9bd"/>
   <project groups="pdk-fs" name="platform/external/crcalc" path="external/crcalc" revision="5559610bea3b267abef3273868f2d6b8c01409a5"/>
   <project name="platform/external/cros/system_api" path="external/cros/system_api" revision="100f5e431f2ee235926c729c049c4659e2109fe3"/>
   <project name="platform/external/curl" path="external/curl" revision="5ba6000306b3069356a86d7ff39df55f90f8baeb"/>
@@ -123,7 +123,7 @@
   <project groups="pdk" name="platform/external/flac" path="external/flac" revision="e685ca5e441867515363f6f9c1be5f609b67e975"/>
   <project groups="pdk-fs" name="platform/external/fonttools" path="external/fonttools" revision="fe6c510afddcf7f5d980b49e4398dc31953b43d3"/>
   <project groups="pdk" name="platform/external/freetype" path="external/freetype" revision="638ea6c2028a6b5b961f07508b0e1e14d7dc62b8"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="17a1471db8c528cd9d44ec4385d2eb3614138856"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="0ed8a5037d27abab17ff24f35a051d14a5297817"/>
   <project name="platform/external/gemmlowp" path="external/gemmlowp" revision="8ffa615a12f5065af8a8eb5619fbce7c85936d77"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="ce50ba50df1890fff70e76f2f0a28e22e2bbb4da"/>
   <project groups="pdk-fs" name="platform/external/glide" path="external/glide" revision="acf91e463acf613ddef2e6e6bb68f5d92665f305"/>
@@ -181,7 +181,7 @@
   <project groups="pdk" name="platform/external/libdrm" path="external/libdrm" revision="e298f1f8f5094b8a7f1eccdaf97bf107b4b5db47"/>
   <project groups="pdk-fs" name="platform/external/libedit" path="external/libedit" revision="315dded283ebd8627b4968d761b0c29bc241d7a3"/>
   <project name="platform/external/libdaemon" path="external/libdaemon" revision="e2f604066d97431c95856c73d7b9ee46b348d37e"/>
-  <project name="platform/external/libevent" path="external/libevent" revision="98da59020d0d01409ff40a0aa362403258d4af90"/>
+  <project name="platform/external/libevent" path="external/libevent" revision="ffa217284b5b8611c5439da0bb38f1e3b182d652"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libexif" path="external/libexif" revision="57a91883d88a2876dd3e9af4363c1ce3d758f7eb"/>
   <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" revision="24f4cec156ab1cf9d3aeeae4408e234f02d874cc"/>
   <project groups="pdk-fs" name="platform/external/libhevc" path="external/libhevc" revision="8c5bdca6781cc189312d1fc213fa854cb3c1de1f"/>
@@ -192,10 +192,10 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libmtp" path="external/libmtp" revision="e204c41bf49cadc1de460f0cf902008955b356d9"/>
   <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci" revision="c0e3e1e612e0ec448c28e3e4fd0e8e26b91e2876"/>
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp" revision="76f8fa7177767cb377f9212e207e3ac16f9b8d48"/>
-  <project groups="pdk" name="platform/external/libnl" path="external/libnl" revision="d3c03bffa143b877a8610d1cb8ef51d92fb2dd61"/>
+  <project groups="pdk" name="platform/external/libnl" path="external/libnl" revision="268e43d6e0c434a0943a973c497615aa5b2ec40f"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528"/>
   <project groups="pdk" name="platform/external/libopus" path="external/libopus" revision="da5155b2f54bc136754590d0871008d9622c8100"/>
-  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/libpcap" path="external/libpcap" revision="9643d9ce738f0d2c820f6e6b468f9a803363c5d0"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/libpcap" path="external/libpcap" revision="77fb6b57411005905c1b762a58edaff28878af8d"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libphonenumber" path="external/libphonenumber" revision="a1e67e756f511eb514b726d9879dbb9ea416363e"/>
   <project groups="pdk" name="platform/external/libpng" path="external/libpng" revision="27891849287a1bbc726ec81a29b6d72eae26f6e3"/>
   <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" revision="a9677b666c6ae598291f8b7757bef967b6338335"/>
@@ -280,7 +280,7 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/svox" path="external/svox" revision="dfb9937746b1828d093faf3b1494f9dc403f392d"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/tagsoup" path="external/tagsoup" revision="28305a2519eea6a1a5e2ad38a51885aa95ab52c5"/>
   <project groups="pdk" name="platform/external/testng" path="external/testng" revision="315c1c80b8f92218d1b7957c87a37f75377b3bc0"/>
-  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/tcpdump" path="external/tcpdump" revision="37816ede8b912ee97b394e8a23a72a850b65c6b9"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/tcpdump" path="external/tcpdump" revision="d303daefa04733ac442315acaf1b69f1567a24d8"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e"/>
   <project groups="pdk" name="platform/external/tinyalsa" path="external/tinyalsa" revision="efb649e0c2650868eb02b6d71716f4671ec9e150"/>
   <project groups="pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="379571405632a407b8ad0e4cea6a3ec86e5703c1"/>
@@ -383,7 +383,7 @@
   <project name="kernel/tests" path="kernel/tests" revision="2d4ecdddfa758b56048aa3fe4022f985869b46dd"/>
   <project groups="pdk" name="platform/libcore" path="libcore" revision="198e2c768850f064abac5d7e155540fdca87c57b"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" revision="bab53f393105fc6caecf6c474c979e962b5c8ef5"/>
-  <project groups="generic_fs" name="platform/ndk" path="ndk" revision="beb224d94e80c2ccb43d1ea0843f5ce691cf9220"/>
+  <project groups="generic_fs" name="platform/ndk" path="ndk" revision="f152289c13ec68652a6018b7d336fd65cad04f58"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="3a349b674ea5b38b704e80eed0190f4c41e66fce"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="326172d0eb26422398d1758d7a09b405492a52f8"/>
   <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="9aa1af8ab126fb6a364291c259a5a37532e8f0ef"/>
@@ -423,7 +423,7 @@
   <project groups="pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="ec5d268260d97499dd45849e29e8c4f5e75dd539"/>
   <project groups="pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809"/>
   <project groups="pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="3ba0f015d44a71494d10daad5a6f5b487b6b7bf5"/>
-  <project groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="99afd4a87d68db2d13aa6f86a787ade91d2a31e1"/>
+  <project groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="3c398ea710466fefee8edd634b592407fedb8cea"/>
   <project groups="pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="1add84e64e756fe623fdabfa66190e65c095053b"/>
   <project groups="pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91"/>
   <project groups="pdk-fs" name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" revision="51cc8462c082a26810f5d7c5a2648232a77e795c"/>
@@ -494,14 +494,14 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="3b735790183e845dda9cc2bd942d9963f87592ca"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="dfa8fc46ef1832327c0511db8687cbcf8a45be2d"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" revision="1fa245bca1e1ca7443913a52b0e8e0bb465b5fe3"/>
-  <project groups="pdk" name="platform/system/bt" path="system/bt" revision="1c512b851d76deac860fce1232e4a1fa1a097f1c"/>
+  <project groups="pdk" name="platform/system/bt" path="system/bt" revision="f978a57103016975b0c9a4595b5e6a877fae77dd"/>
   <project groups="pdk" name="platform/system/ca-certificates" path="system/ca-certificates" revision="71a9d0371376aff02e51524a7cdbd3d7f1466d66"/>
   <project name="platform/system/connectivity/apmanager" path="system/connectivity/apmanager" revision="b83e33fb609e6fd0559857620f6a7b6ff4d85979"/>
   <project name="platform/system/connectivity/dhcp_client" path="system/connectivity/dhcp_client" revision="702e09977646efecbdc26eb348031a4ed583161a"/>
   <project name="platform/system/connectivity/shill" path="system/connectivity/shill" revision="f37f8cf4ab372417a643877b092049c41437c05f"/>
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="9e7eb14f0f21ba21bafd06e5fb450ffbd5a1ab92"/>
-  <project groups="pdk" name="platform/system/core" path="system/core" revision="95428817d6ec576a25e124bc7a0e89b248701ee3"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="05c98248e61f97ae8271f7a01c039c19f03400de"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" revision="2546a7f8fd04f0d8e17700b2b330f5273f22ce2d"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="33732ddfd356b8466d44320eff46aa969d88ba13"/>
   <project name="platform/system/firewalld" path="system/firewalld" revision="c0413cc291345e498ee7d9f8eb478de7fedc8e51"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="961cbf022deed5b1cb158893211502b2822d78a2"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="03d4b6d531eb8c2ebcb4d572a3bf118c70a83ff6"/>
@@ -513,7 +513,7 @@
   <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="15105ce77713315372e4223d55bc38fda74f9c97"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/system/tools/aidl" path="system/tools/aidl" revision="bc2df69ef1e7ee6555242d4107775306a78679cc"/>
   <project name="platform/system/tpm" path="system/tpm" revision="7c0029f3d83f49d53e5d69374bc014de123ddfda"/>
-  <project name="platform/system/update_engine" path="system/update_engine" revision="d853730826e02647dee6ac818ceef73a4d0e57f0"/>
+  <project name="platform/system/update_engine" path="system/update_engine" revision="b6eef73e20736b4b6a43611fa732d8bba72ff7ff"/>
   <project groups="pdk" name="platform/system/vold" path="system/vold" revision="0c0f9228cf1cd0f39ecb56f643ce7e3b050bb143"/>
   <project name="platform/system/weaved" path="system/weaved" revision="e477f1e5fd82dfcb545b9f57b98b0d3384ac75de"/>
   <project name="platform/system/webservd" path="system/webservd" revision="b470b41a117a213f5b8cf2d7badcc208da001b72"/>
