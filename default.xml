@@ -3,7 +3,7 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <default remote="aosp" revision="master" sync-j="4"/>
 
-  <project groups="pdk" name="platform/build" path="build/make" revision="86559441a1026f283583d611196c3f66deaa0297">
+  <project groups="pdk" name="platform/build" path="build/make" revision="36bcb78eb9598883c92c010e51fdeee7c76b2d31">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -20,7 +20,7 @@
   </project>
   <project groups="pdk" name="platform/art" path="art" revision="5b8f4e952f17df3ef28c2d06b3a2e890e1d2b708"/>
   <project groups="pdk" name="platform/bionic" path="bionic" revision="840ae69408c9b6ca269bce4657b9696cc6720918"/>
-  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="5f98326c1e4b10afa6c92739bfbf5a386f821a96"/>
+  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="b4c4f8c494c4e9bd559c9f16b799c0307bc8ac4a"/>
   <project groups="pdk" name="platform/compatibility/cdd" path="compatibility/cdd" revision="3a8c552218d5556bc99e94dd6c1c3aa318afa8ee"/>
   <project groups="cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="687661092cfd8008bc7bb7cbb249d21fbfdd8f53"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="eebf335a7f3bcf53a3f2cf9437eaabdf40c3aefe"/>
@@ -50,7 +50,7 @@
   <project groups="device,pdk" name="device/google/accessory/arduino" path="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5"/>
   <project groups="device,pdk" name="device/google/accessory/demokit" path="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9"/>
   <project groups="device,fugu,broadcom_pdk,generic_fs,pdk" name="device/google/atv" path="device/google/atv" revision="325f52cd91ed26b9dc9cd05680f1edc6a2d8607c"/>
-  <project groups="device,pdk" name="device/google/contexthub" path="device/google/contexthub" revision="a917e554a26a5b4a4e553fc1fdfd6acb5b7027ad"/>
+  <project groups="device,pdk" name="device/google/contexthub" path="device/google/contexthub" revision="782513ced82a95b977ca30edb9098cbf8b3fcc93"/>
   <project groups="device,dragon,pdk" name="device/google/dragon" path="device/google/dragon" revision="6d85cfa6261bdfec31b3f5a6f4d1ea8046f612fd"/>
   <project groups="device,dragon,pdk" name="device/google/dragon-kernel" path="device/google/dragon-kernel" revision="8c9e4d14540119e0815a453eb4fefbedeaf8794f"/>
   <project groups="device,marlin" name="device/google/marlin" path="device/google/marlin" revision="f357bf03d535aea4de4844fca0d9d52c3adff371"/>
@@ -402,9 +402,9 @@
   <project groups="qcom_msm8x84,pdk" name="platform/hardware/qcom/msm8x84" path="hardware/qcom/msm8x84" revision="582b414269d8472d17eef65d8a8965aa8105042f"/>
   <project groups="qcom,pdk" name="platform/hardware/qcom/power" path="hardware/qcom/power" revision="3a098ee1f89c398b9d6e7b5dfae9c694994f8bc4"/>
   <project groups="qcom_wlan,pdk" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="00ccd5a4a6e5242aeba0f20bed827dc2719a0e0b"/>
-  <project groups="pdk" name="platform/hardware/ril" path="hardware/ril" revision="6ea410309a641149c989630edb7749d2bc37676a"/>
+  <project groups="pdk" name="platform/hardware/ril" path="hardware/ril" revision="13bbab0ddbc04e2ebc75b06934e8e6c2e905b435"/>
   <project name="kernel/tests" path="kernel/tests" revision="4b5bf38890cb46f42e4769d545401c217a73687a"/>
-  <project groups="pdk" name="platform/libcore" path="libcore" revision="65a085c31c81f6f9c4609fd284ab41cecd8572cc"/>
+  <project groups="pdk" name="platform/libcore" path="libcore" revision="7a659a8b9f8ce4a0a8052c7821f2f513f6ab0aa8"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" revision="90c12683ee3e8f2089508d0030582e978035aea6"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="a691d6c0127f2e4d1774347963ee440e357c8df4"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="ffca06958ce659c0da735cc0f9b50690af3bf194"/>
@@ -525,7 +525,7 @@
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="eee9e7e2347bd819b877bc63ebcf545642b9e59b"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="8fbb6736ffd23e005396afb793c72cb048bbf7a6"/>
   <project groups="pdk" name="platform/system/core" path="system/core" revision="d444f8663daf935c2bc34bd42f329bace2edb05c"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="91ddc6083680780f939c33b58b166a876f2c6529"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="7902acdaa01a820ee8dd70feeb4f11abb604c284"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="56509312054d667c83e168f01037556edba747a5"/>
   <project groups="pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="208a4b70ea5e1d14c80a9306f61ff37605609bba"/>
   <project groups="pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="66ae7188f012ae659e2187216c418e8031458095"/>
@@ -540,13 +540,13 @@
   <project groups="pdk" name="platform/system/nfc" path="system/nfc" revision="3c2997037e45dbf1172b980a93a7d8da1bed79c3"/>
   <project name="platform/system/nvram" path="system/nvram" revision="e52a7f4addee2c1b6b85fbd445890ccc1c5fc2d1"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="7f35beb6cb1a554e8a9c86ade9b4206deda3d9c2"/>
-  <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="987014c8944c88d0dc1a386741b26504b2b38162"/>
+  <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="5d0c2e417b5dd527ec22faaffe9b8dd28ba4c35e"/>
   <project groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="1a90639de2ce33d514d1e8720eeaefbc67ca373a"/>
   <project groups="pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="dff644c7c398bd8d0845fdb654a4dd03d6e581ce"/>
   <project name="platform/system/tpm" path="system/tpm" revision="47b371cec718e4b9cc8c2208473308c4f6deeaaa"/>
   <project groups="pdk" name="platform/system/update_engine" path="system/update_engine" revision="f411650403c1d69c15ec0f2ee09b24c6c0ec67b5"/>
   <project groups="pdk" name="platform/system/vold" path="system/vold" revision="71fa1068de3f3f7b79d262e487ae90f948c415d6"/>
-  <project groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="7e3ebf918665c8623a9f8a28e79ab38c48a012b7"/>
+  <project groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="682ad64b88318e595712f0aed6123fc6b46167a7"/>
   <project groups="vts,pdk" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="80c5dac83d38947722d9dffe0f7ec593ff1d984c"/>
   <project groups="vts,pdk" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="ab80ee4d529d75ba18edff6b87740f02ba4f50eb"/>
   <project groups="vts,pdk" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="d4d9381fe378837b06bf13494529f2a18f104363"/>
